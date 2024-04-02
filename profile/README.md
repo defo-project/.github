@@ -23,19 +23,21 @@ repo that has HOWTOs, test scripts and other ancillary ECH developer content.
 
 ## Builder/CI status for repos
 
-For each of our ECH-enabled repos, we've added a 'builder' workflow that
-attempts to merge our code with the latest upstream and that then does a
+For each of our ECH-enabled repos, we've added a 'builder' workflow (run daily)
+that attempts to merge our code with the latest upstream and that then does a
 build and a basic test. We expect these to fail from time to time as changes
 occur in the upstream packages. When that happens, there's a red badge below
 and we usually fix those within a couple of days by rebasing the repos here
-with the relevant upstream.
+with the relevant upstream. Note that a red badge doesn't mean that our
+ECH-enabled code is broken, just that some manual intervention is needed to
+bring us back up to the bleeding edge with the upstream package.
 
-| Package  | 'Builder' status |
-|--|--|
-| openssl | ![openssl packages.yaml](https://github.com/defo-project/openssl/actions/workflows/packages.yaml/badge.svg) |
-| apache-httpd | ![apache-httpd packages.yaml](https://github.com/defo-project/apache-httpd/actions/workflows/packages.yaml/badge.svg) |
-| curl | ![curl packages.yaml](https://github.com/defo-project/curl/actions/workflows/packages.yaml/badge.svg) |
-| haproxy | ![haproxy packages.yaml](https://github.com/defo-project/haproxy/actions/workflows/packages.yaml/badge.svg) |
-| lighttpd1.4 | ![lighttpd packages.yaml](https://github.com/defo-project/lighttpd1.4/actions/workflows/packages.yaml/badge.svg) |
-| nginx | ![nginx packages.yaml](https://github.com/defo-project/nginx/actions/workflows/packages.yaml/badge.svg) |
+| Package  | 'Builder' status | Details |
+|--|--|--|
+| openssl | ![openssl packages.yaml](https://github.com/defo-project/openssl/actions/workflows/packages.yaml/badge.svg) | [workflow link](https://github.com/defo-project/openssl/actions/workflows/packages.yaml) |
+| apache-httpd | ![apache-httpd packages.yaml](https://github.com/defo-project/apache-httpd/actions/workflows/packages.yaml/badge.svg) | | [workflow link](https://github.com/defo-project/apache-httpd/actions/workflows/packages.yaml) |
+| curl | ![curl packages.yaml](https://github.com/defo-project/curl/actions/workflows/packages.yaml/badge.svg) | | [workflow link](https://github.com/defo-project/curl/actions/workflows/packages.yaml) |
+| haproxy | ![haproxy packages.yaml](https://github.com/defo-project/haproxy/actions/workflows/packages.yaml/badge.svg) | | [workflow link](https://github.com/defo-project/haproxy/actions/workflows/packages.yaml) |
+| lighttpd1.4 | ![lighttpd packages.yaml](https://github.com/defo-project/lighttpd1.4/actions/workflows/packages.yaml/badge.svg) | | [workflow link](https://github.com/defo-project/lighttpd1.4/actions/workflows/packages.yaml) |
+| nginx | ![nginx packages.yaml](https://github.com/defo-project/nginx/actions/workflows/packages.yaml/badge.svg) | | [workflow link](https://github.com/defo-project/nginx/actions/workflows/packages.yaml) |
 
