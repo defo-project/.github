@@ -30,7 +30,7 @@ occur in the upstream packages. When that happens, there's a red badge below
 and we usually fix those within a couple of days by rebasing the repos here
 with the relevant upstream.
 
-|  |  |
+| Package  | 'Builder' status |
 |--|--|
 | openssl | ![openssl packages.yaml](https://github.com/defo-project/openssl/actions/workflows/packages.yaml/badge.svg) |
 | apache-httpd | ![apache-httpd packages.yaml](https://github.com/defo-project/apache-httpd/actions/workflows/packages.yaml/badge.svg) |
