@@ -20,6 +20,7 @@ Project</a> are doing the work in DEfO. </p>
 This organisation is where we keep our various ECH-enabled code
 repos and our [ech-dev-utils](https://github.com/defo-project/ech-dev-utils)
 repo that has HOWTOs, test scripts and other ancillary ECH developer content.
+That's the place to start if you want to play with these ECH-enabled packages.
 
 ## Builder/CI status for repos
 
