@@ -44,9 +44,8 @@ Packages with our ECH code yet to be upstreamed:
 | nginx | ![nginx packages.yaml](https://github.com/defo-project/nginx/actions/workflows/packages.yaml/badge.svg) | [workflow link](https://github.com/defo-project/nginx/actions/workflows/packages.yaml) |
 
 For packages where our ECH code has already been upstreamed, we also have a
-daily check that those build and pass a basic ECH test.
-
-Packages with our ECH code already upstreamed:
+daily check that those build and pass a basic ECH test. So far, that's just
+for ``curl``:
 
 | Package  | 'Builder' status | Details |
 |--|--|--|
