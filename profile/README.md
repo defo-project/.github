@@ -49,4 +49,5 @@ daily check that those build and pass a basic ECH test.
 Packages with our ECH code already upstreamed:
 
 | Package  | 'Builder' status | Details |
+|--|--|--|
 | curl | ![curl packages.yaml](https://github.com/defo-project/curl/actions/workflows/packages.yaml/badge.svg) | [workflow link](https://github.com/defo-project/curl/actions/workflows/packages.yaml) |
