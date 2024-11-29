@@ -42,6 +42,7 @@ Packages with our ECH code yet to be upstreamed:
 | haproxy | ![haproxy packages.yaml](https://github.com/defo-project/haproxy/actions/workflows/packages.yaml/badge.svg) | [workflow link](https://github.com/defo-project/haproxy/actions/workflows/packages.yaml) |
 | lighttpd1.4 | ![lighttpd packages.yaml](https://github.com/defo-project/lighttpd1.4/actions/workflows/packages.yaml/badge.svg) | [workflow link](https://github.com/defo-project/lighttpd1.4/actions/workflows/packages.yaml) |
 | nginx | ![nginx packages.yaml](https://github.com/defo-project/nginx/actions/workflows/packages.yaml/badge.svg) | [workflow link](https://github.com/defo-project/nginx/actions/workflows/packages.yaml) |
+| python | ![python packages.yaml](https://github.com/defo-project/cpython/actions/workflows/packages.yaml/badge.svg) | [workflow link](https://github.com/defo-project/cpython/actions/workflows/packages.yaml) |
 
 For packages where our ECH code has already been upstreamed, we also have a
 daily check that those build and pass a basic ECH test. So far, that's just
