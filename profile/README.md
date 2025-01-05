@@ -37,12 +37,12 @@ Packages with our ECH code yet to be upstreamed:
 
 | Package  | 'Builder' status | Details |
 |--|--|--|
-| openssl | ![openssl packages.yaml](https://github.com/defo-project/openssl/actions/workflows/packages.yaml/badge.svg) | [workflow link](https://github.com/defo-project/openssl/actions/workflows/packages.yaml) |
-| apache-httpd | ![apache-httpd packages.yaml](https://github.com/defo-project/apache-httpd/actions/workflows/packages.yaml/badge.svg) | [workflow link](https://github.com/defo-project/apache-httpd/actions/workflows/packages.yaml) |
-| haproxy | ![haproxy packages.yaml](https://github.com/defo-project/haproxy/actions/workflows/packages.yaml/badge.svg) | [workflow link](https://github.com/defo-project/haproxy/actions/workflows/packages.yaml) |
-| lighttpd1.4 | ![lighttpd packages.yaml](https://github.com/defo-project/lighttpd1.4/actions/workflows/packages.yaml/badge.svg) | [workflow link](https://github.com/defo-project/lighttpd1.4/actions/workflows/packages.yaml) |
-| nginx | ![nginx packages.yaml](https://github.com/defo-project/nginx/actions/workflows/packages.yaml/badge.svg) | [workflow link](https://github.com/defo-project/nginx/actions/workflows/packages.yaml) |
-| python | ![python packages.yaml](https://github.com/defo-project/cpython/actions/workflows/packages.yaml/badge.svg) | [workflow link](https://github.com/defo-project/cpython/actions/workflows/packages.yaml) |
+| [openssl](https://github.com/defo-project/openssl) | ![openssl packages.yaml](https://github.com/defo-project/openssl/actions/workflows/packages.yaml/badge.svg) | [workflow link](https://github.com/defo-project/openssl/actions/workflows/packages.yaml) |
+| [apache-httpd](https://github.com/defo-project/apache-httpd) | ![apache-httpd packages.yaml](https://github.com/defo-project/apache-httpd/actions/workflows/packages.yaml/badge.svg) | [workflow link](https://github.com/defo-project/apache-httpd/actions/workflows/packages.yaml) |
+| [haproxy](https://github.com/defo-project/haproxy) | ![haproxy packages.yaml](https://github.com/defo-project/haproxy/actions/workflows/packages.yaml/badge.svg) | [workflow link](https://github.com/defo-project/haproxy/actions/workflows/packages.yaml) |
+| [lighttpd1.4](https://github.com/defo-project/lighttpd1.4) | ![lighttpd packages.yaml](https://github.com/defo-project/lighttpd1.4/actions/workflows/packages.yaml/badge.svg) | [workflow link](https://github.com/defo-project/lighttpd1.4/actions/workflows/packages.yaml) |
+| [nginx](https://github.com/defo-project/nginx) | ![nginx packages.yaml](https://github.com/defo-project/nginx/actions/workflows/packages.yaml/badge.svg) | [workflow link](https://github.com/defo-project/nginx/actions/workflows/packages.yaml) |
+| [python](https://github.com/defo-project/cpython) | ![python packages.yaml](https://github.com/defo-project/cpython/actions/workflows/packages.yaml/badge.svg) | [workflow link](https://github.com/defo-project/cpython/actions/workflows/packages.yaml) |
 
 For packages where our ECH code has already been upstreamed, we also have a
 daily check that those build and pass a basic ECH test. So far, that's just
@@ -50,4 +50,4 @@ for ``curl``:
 
 | Package  | 'Builder' status | Details |
 |--|--|--|
-| curl | ![curl packages.yaml](https://github.com/defo-project/curl/actions/workflows/packages.yaml/badge.svg) | [workflow link](https://github.com/defo-project/curl/actions/workflows/packages.yaml) |
+| [curl](https://github.com/defo-project/curl) | ![curl packages.yaml](https://github.com/defo-project/curl/actions/workflows/packages.yaml/badge.svg) | [workflow link](https://github.com/defo-project/curl/actions/workflows/packages.yaml) |
