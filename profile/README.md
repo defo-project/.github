@@ -21,12 +21,13 @@ That's the place to start if you want to play with these ECH-enabled packages.
 
 ## Builder/CI status for repos
 
-We're currently (2025-01-07) making changes to these repositories to update
-the ECH APIs used to match those agreed with OpenSSL maintainers, as part
-of the work to upstream our ECH code into an OpenSSL feature branch. That
-work is partly completed, so you can think of these repos as being a few PRs
-ahead of the upstreaming work. In the short-term, that'll mean this stuff
-will be broken for a few days as we work through the transition.
+We're currently (2025-01-07) making changes to these repositories to update the
+ECH APIs used to match those agreed with OpenSSL maintainers, as part of the
+work to upstream our ECH code into the [OpenSSL ECH feature
+branch](https://github.com/openssl/openssl/tree/feature/ech). That work is
+partly completed, so you can think of these repos as being a few PRs ahead of
+the upstreaming work. In the short-term, that'll mean things will be broken
+for a few days as we work through the transition from old to new APIs.
 
 For each of our ECH-enabled repos, we've added a 'builder' workflow (run daily)
 that attempts to merge our code with the latest upstream and that then does a
