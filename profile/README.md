@@ -8,11 +8,8 @@ the security layer for the web. <a href="https://openssl.org/">OpenSSL</a> is a
 widely used library that provides an implementation of the TLS protocol.  The
 <a href="https://defo.ie">DEfO project</a> has developed an implementation of
 ECH for OpenSSL, and proof-of-concept implementations of various clients and servers that use OpenSSL as a
-demonstration and for interoperability testing.  DEfO was initially funded by
-the <a href="https://www.opentech.fund/">Open Technology Fund (OTF)</a>, and
-subsequently by the <a href="https://www.ndi.org/">National Democratic
-Initiative</a>. In mid-2023 OTF extended our funding to help with upstreaming
-the relevant ECH code to the various projects involved.
+demonstration and for interoperability testing.  DEfO is funded by
+the <a href="https://www.opentech.fund/">Open Technology Fund (OTF)</a>.
 <a href="https://tolerantnetworks.com/">Tolerant Networks
 Ltd.</a> and people from the <a href="https://guardianproject.info/">Guardian
 Project</a> are doing the work in DEfO. </p>
@@ -23,6 +20,13 @@ repo that has HOWTOs, test scripts and other ancillary ECH developer content.
 That's the place to start if you want to play with these ECH-enabled packages.
 
 ## Builder/CI status for repos
+
+We're currently (2025-01-07) making changes to these repositories to update
+the ECH APIs used to match those agreed with OpenSSL maintainers, as part
+of the work to upstream our ECH code into an OpenSSL feature branch. That
+work is partly completed, so you can think of these repos as being a few PRs
+ahead of the upstreaming work. In the short-term, that'll mean this stuff
+will be broken for a few days as we work through the transition.
 
 For each of our ECH-enabled repos, we've added a 'builder' workflow (run daily)
 that attempts to merge our code with the latest upstream and that then does a
