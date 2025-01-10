@@ -21,22 +21,21 @@ That's the place to start if you want to play with these ECH-enabled packages.
 
 ## Builder/CI status for repos
 
-We're currently (2025-01-07) making changes to these repositories to update the
-ECH APIs used to match those agreed with OpenSSL maintainers, as part of the
-work to upstream our ECH code into the [OpenSSL ECH feature
+The ECH APIs used in these repos match those agreed with OpenSSL maintainers,
+as part of the work to upstream our ECH code into the [OpenSSL ECH feature
 branch](https://github.com/openssl/openssl/tree/feature/ech). That work is
-partly completed, so you can think of these repos as being a few PRs ahead of
-the upstreaming work. In the short-term, that'll mean things will be broken
-for a few days as we work through the transition from old to new APIs.
+partly completed, so you can think of the OpenSSL repo here as being a few PRs
+ahead of the "official" OpenSSL feature branch for ECH. 
 
-For each of our ECH-enabled repos, we've added a 'builder' workflow (run daily)
-that attempts to merge our code with the latest upstream and that then does a
-build and a basic test. We expect these to fail from time to time as changes
-occur in the upstream packages. When that happens, there's a red badge below
-and we usually fix those within a couple of days by rebasing the repos here
-with the relevant upstream. Note that a red badge doesn't mean that our
-ECH-enabled code is broken, just that some manual intervention is needed to
-bring us back up to the bleeding edge with the upstream package.
+For each of these ECH-enabled repos, we've added a 'builder' workflow (run
+daily and after a push) that attempts to merge our code with the latest
+upstream and that then does a build and a basic test. We expect these to fail
+from time to time as changes occur in the upstream packages. When that happens,
+there's a red badge below and we usually fix those within a couple of days by
+rebasing the repos here with the relevant upstream. Note that a red badge
+doesn't mean that our ECH-enabled code is broken, just that some manual
+intervention is needed to bring us back up to the bleeding edge with the
+upstream package.
 
 Packages with our ECH code yet to be upstreamed:
 
