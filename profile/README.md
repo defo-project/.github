@@ -37,6 +37,10 @@ doesn't mean that our ECH-enabled code is broken, just that some manual
 intervention is needed to bring us back up to the bleeding edge with the
 upstream package.
 
+We have now partly upstreamed ECH code to the OpenSSL project - there is
+sufficient code for ECH clients and servers in the [OpenSSL ECH feature
+branch](https://github.com/openssl/openssl/tree/feature/ech).
+
 Packages with our ECH code yet to be upstreamed:
 
 | Package  | 'Builder' status | Details |
