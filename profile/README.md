@@ -41,6 +41,12 @@ We have now partly upstreamed ECH code to the OpenSSL project - there is
 sufficient code for ECH clients and servers in the [OpenSSL ECH feature
 branch](https://github.com/openssl/openssl/tree/feature/ech).
 
+We've also upstreamed code to apahce2 and haproxy. The latter is failing
+for the moment as we need to re-incorporate the changes agreed with
+upstream developers into our CI setup. We plan to do that in the coming
+days, but are prioritising work on upstreaming nginx code for now. (So
+it may take longer to see only green below.)
+
 Packages with our ECH code yet to be upstreamed:
 
 | Package  | 'Builder' status | Details |
