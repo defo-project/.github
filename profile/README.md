@@ -40,8 +40,12 @@ upstream package.
 We have now partly upstreamed ECH code to the OpenSSL project - there is
 sufficient code for ECH clients and servers in the [OpenSSL ECH feature
 branch](https://github.com/openssl/openssl/tree/feature/ech).
-
 We've also upstreamed code to curl, lighttpd, apache2, haproxy and nginx.
+
+We're currently (2025-12-03) playing catch-up between the defo-project
+repos and the code that we've upstreamed to the various projects, so 
+the CI flags will be red for a wee while, apologies;-( We're working on
+it.
 
 Packages with our ECH code yet to be upstreamed:
 
