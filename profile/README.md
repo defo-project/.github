@@ -37,21 +37,15 @@ doesn't mean that our ECH-enabled code is broken, just that some manual
 intervention is needed to bring us back up to the bleeding edge with the
 upstream package.
 
-We have now partly upstreamed ECH code to the OpenSSL project - there is
+We have now upstreamed ECH shared-mode code to the OpenSSL project - there is
 sufficient code for ECH clients and servers in the [OpenSSL ECH feature
 branch](https://github.com/openssl/openssl/tree/feature/ech).
 We've also upstreamed code to curl, lighttpd, apache2, haproxy and nginx.
-
-We're currently (2025-12-03) playing catch-up between the defo-project
-repos and the code that we've upstreamed to the various projects, so 
-the CI flags will be red for a wee while, apologies;-( We're working on
-it.
 
 Packages with our ECH code yet to be upstreamed:
 
 | Package  | 'Builder' status | Details |
 |--|--|--|
-| [openssl](https://github.com/defo-project/openssl) | ![openssl packages.yaml](https://github.com/defo-project/openssl/actions/workflows/packages.yaml/badge.svg) | [workflow link](https://github.com/defo-project/openssl/actions/workflows/packages.yaml) |
 | [python](https://github.com/defo-project/cpython) | ![python packages.yaml](https://github.com/defo-project/cpython/actions/workflows/packages.yaml/badge.svg) | [workflow link](https://github.com/defo-project/cpython/actions/workflows/packages.yaml) |
 
 For packages where our ECH code has already been upstreamed, we also have a
@@ -59,6 +53,7 @@ daily check that those build and pass a basic ECH test:
 
 | Package  | 'Builder' status | Details |
 |--|--|--|
+| [openssl](https://github.com/defo-project/openssl) | ![openssl packages.yaml](https://github.com/defo-project/openssl/actions/workflows/packages.yaml/badge.svg) | [workflow link](https://github.com/defo-project/openssl/actions/workflows/packages.yaml) |
 | [apache-httpd](https://github.com/defo-project/apache-httpd) | ![apache-httpd packages.yaml](https://github.com/defo-project/apache-httpd/actions/workflows/packages.yaml/badge.svg) | [workflow link](https://github.com/defo-project/apache-httpd/actions/workflows/packages.yaml) |
 | [curl](https://github.com/defo-project/curl) | ![curl packages.yaml](https://github.com/defo-project/curl/actions/workflows/packages.yaml/badge.svg) | [workflow link](https://github.com/defo-project/curl/actions/workflows/packages.yaml) |
 | [lighttpd1.4](https://github.com/defo-project/lighttpd1.4) | ![lighttpd packages.yaml](https://github.com/defo-project/lighttpd1.4/actions/workflows/packages.yaml/badge.svg) | [workflow link](https://github.com/defo-project/lighttpd1.4/actions/workflows/packages.yaml) |
@@ -72,5 +67,5 @@ daily check that those build and pass the basic ECH test:
 | [haproxy](https://github.com/defo-project/haproxy) | ![haproxy packages.yaml](https://github.com/defo-project/haproxy/actions/workflows/packages.yaml/badge.svg) | [workflow link](https://github.com/defo-project/haproxy/actions/workflows/packages.yaml) |
 | [nginx](https://github.com/defo-project/nginx) | ![nginx packages.yaml](https://github.com/defo-project/nginx/actions/workflows/packages.yaml/badge.svg) | [workflow link](https://github.com/defo-project/nginx/actions/workflows/packages.yaml) |
 
-The above tests are failing for the moment as we need to re-incorporate the
+The nginx tests are failing for the moment as we need to re-incorporate the
 changes agreed with upstream developers into our CI setup.
