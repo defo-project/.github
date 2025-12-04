@@ -42,6 +42,13 @@ sufficient code for ECH clients and servers in the [OpenSSL ECH feature
 branch](https://github.com/openssl/openssl/tree/feature/ech).
 We've also upstreamed code to curl, lighttpd, apache2, haproxy and nginx.
 
+For openssl, haproxy and nginx, our ECH shared-mode code has been upstreamed, but our
+defo-project repos also support ECH split-mode so we also have a
+daily check that those build and pass the basic ECH test.
+
+The nginx tests are failing for the moment (as of 2025-12-04) as we need to re-incorporate the
+changes agreed with upstream developers into our CI setup.
+
 Packages with our ECH code yet to be upstreamed:
 
 | Package  | 'Builder' status | Details |
@@ -57,15 +64,6 @@ daily check that those build and pass a basic ECH test:
 | [apache-httpd](https://github.com/defo-project/apache-httpd) | ![apache-httpd packages.yaml](https://github.com/defo-project/apache-httpd/actions/workflows/packages.yaml/badge.svg) | [workflow link](https://github.com/defo-project/apache-httpd/actions/workflows/packages.yaml) |
 | [curl](https://github.com/defo-project/curl) | ![curl packages.yaml](https://github.com/defo-project/curl/actions/workflows/packages.yaml/badge.svg) | [workflow link](https://github.com/defo-project/curl/actions/workflows/packages.yaml) |
 | [lighttpd1.4](https://github.com/defo-project/lighttpd1.4) | ![lighttpd packages.yaml](https://github.com/defo-project/lighttpd1.4/actions/workflows/packages.yaml/badge.svg) | [workflow link](https://github.com/defo-project/lighttpd1.4/actions/workflows/packages.yaml) |
-
-For haproxy and nginx, our ECH shared-mode code has been upstreamed, but our
-defo-project repos also support ECH split-mode so we also have a
-daily check that those build and pass the basic ECH test:
-
-| Package  | 'Builder' status | Details |
 |--|--|--|
 | [haproxy](https://github.com/defo-project/haproxy) | ![haproxy packages.yaml](https://github.com/defo-project/haproxy/actions/workflows/packages.yaml/badge.svg) | [workflow link](https://github.com/defo-project/haproxy/actions/workflows/packages.yaml) |
 | [nginx](https://github.com/defo-project/nginx) | ![nginx packages.yaml](https://github.com/defo-project/nginx/actions/workflows/packages.yaml/badge.svg) | [workflow link](https://github.com/defo-project/nginx/actions/workflows/packages.yaml) |
-
-The nginx tests are failing for the moment as we need to re-incorporate the
-changes agreed with upstream developers into our CI setup.
