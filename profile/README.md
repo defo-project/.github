@@ -46,10 +46,6 @@ For openssl, haproxy and nginx, our ECH shared-mode code has been upstreamed, bu
 defo-project repos also support ECH split-mode so we also have a
 daily check that those build and pass the basic ECH test.
 
-As of 2025-12-04, the nginx repo here still needs to have ECH split-mode added
-back. There were more changes to the upstreamed ECH shared-mode code than in
-other cases so we'll catch up with that shortly.
-
 Packages with our ECH code yet to be upstreamed:
 
 | Package  | 'Builder' status | Details |
