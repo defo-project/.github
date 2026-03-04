@@ -1,7 +1,7 @@
 # Developing ECH for OpenSSL (DEfO)
 
 <p> The encrypted ClientHello (ECH) mechanism 
-(<a href="https://tools.ietf.org/html/draft-ietf-tls-esni">draft-spec</a>) is a
+(<a href="https://datatracker.ietf.org/doc/rfc9849/">RFC 9849</a>) is a
 way to plug a few privacy-holes that remain in the Transport Layer Security 
 (<a href="https://tools.ietf.org/html/rfc8446">TLS</a>) protocol that's used as
 the security layer for the web. <a href="https://openssl.org/">OpenSSL</a> is a
@@ -21,11 +21,9 @@ That's the place to start if you want to play with these ECH-enabled packages.
 
 ## Builder/CI status for repos
 
-The ECH APIs used in these repos match those agreed with OpenSSL maintainers,
-as part of the work to upstream our ECH code into the [OpenSSL ECH feature
-branch](https://github.com/openssl/openssl/tree/feature/ech). That work is
-partly completed, so you can think of the OpenSSL repo here as being a few PRs
-ahead of the "official" OpenSSL feature branch for ECH. 
+The ECH APIs used in these repos are those agreed with OpenSSL maintainers,
+which will be part of the OpenSSL 4.0 release, and (other than for split-mode
+ECH) have been upstreamed into the OpenSSL master branch.
 
 For each of these ECH-enabled repos, we've added a 'builder' workflow (run
 daily and after a push) that attempts to merge our code with the latest
@@ -37,14 +35,17 @@ doesn't mean that our ECH-enabled code is broken, just that some manual
 intervention is needed to bring us back up to the bleeding edge with the
 upstream package.
 
-We have now upstreamed ECH shared-mode code to the OpenSSL project - there is
-sufficient code for ECH clients and servers in the [OpenSSL ECH feature
-branch](https://github.com/openssl/openssl/tree/feature/ech).
-We've also upstreamed code to curl, lighttpd, apache2, haproxy and nginx.
+We have now upstreamed ECH shared-mode code to the OpenSSL project and we've
+also upstreamed ECH code to curl, lighttpd, apache2, haproxy and nginx.
 
-For openssl, haproxy and nginx, our ECH shared-mode code has been upstreamed, but our
-defo-project repos also support ECH split-mode so we also have a
-daily check that those build and pass the basic ECH test.
+For openssl, haproxy and nginx, our ECH shared-mode code has been upstreamed,
+but our defo-project repos also support ECH split-mode so we also have a daily
+check that those build and pass the basic ECH test.
+
+As of 2026-03-04 a number of the CI builds are failing as there are some
+interface changes in OpenSSL 4.0 that cause breakage. We expect those to
+be resolved in the coming days/weeks as other upstream packages test the
+alpha release of OpenSSL 4.0.
 
 Packages with our ECH code yet to be upstreamed:
 
