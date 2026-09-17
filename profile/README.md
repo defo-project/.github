@@ -42,10 +42,7 @@ For openssl, haproxy and nginx, our ECH shared-mode code has been upstreamed,
 but our defo-project repos also support ECH split-mode so we also have a daily
 check that those build and pass the basic ECH test.
 
-As of 2026-03-04 a number of the CI builds are failing as there are some
-interface changes in OpenSSL 4.0 (unrelated to ECH) that cause breakage. We
-expect those to be resolved in the coming days/weeks as other upstream packages
-test the alpha release of OpenSSL 4.0.
+As of 2026-09-17 we've updated these builds to reflect the latest upstreams.
 
 Packages with our ECH code yet to be upstreamed:
 
