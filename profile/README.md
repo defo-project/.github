@@ -51,7 +51,7 @@ Packages with our ECH code yet to be upstreamed:
 
 | Package  | 'Builder' status | Details |
 |--|--|--|
-| [python](https://github.com/defo-project/cpython) | ![python packages.yaml](https://github.com/defo-project/cpython/actions/workflows/packages.yaml/badge.svg) | [workflow link](https://github.com/defo-project/cpython/actions/workflows/packages.yaml) |
+| [python](https://github.com/defo-project/cpython) | [![builder](https://github.com/defo-project/cpython/actions/workflows/packages.yaml/badge.svg)](https://github.com/defo-project/cpython/actions/workflows/packages.yaml) | [workflow link](https://github.com/defo-project/cpython/actions/workflows/packages.yaml) |
 
 For packages where our ECH code has already been upstreamed, we also have a
 daily check that those build and pass a basic ECH test:
