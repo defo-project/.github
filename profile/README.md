@@ -8,16 +8,27 @@ the security layer for the web. <a href="https://openssl.org/">OpenSSL</a> is a
 widely used library that provides an implementation of the TLS protocol.  The
 <a href="https://defo.ie">DEfO project</a> has developed an implementation of
 ECH for OpenSSL, and proof-of-concept implementations of various clients and servers that use OpenSSL as a
-demonstration and for interoperability testing.  DEfO is funded by
+demonstration and for interoperability testing.  DEfO was funded by
 the <a href="https://www.opentech.fund/">Open Technology Fund (OTF)</a>.
 <a href="https://tolerantnetworks.com/">Tolerant Networks
 Ltd.</a> and people from the <a href="https://guardianproject.info/">Guardian
-Project</a> are doing the work in DEfO. </p>
+Project</a> did the work in DEfO.</p>
+
+<p>OTF funding for DEfO finished in November 2026, but the team continues
+to try help other projects with integrating and using ECH.</p>
 
 This organisation is where we keep our various ECH-enabled code
 repos and our [ech-dev-utils](https://github.com/defo-project/ech-dev-utils)
 repo that has HOWTOs, test scripts and other ancillary ECH developer content.
 That's the place to start if you want to play with these ECH-enabled packages.
+
+Now that ECH has been upstreamed to all targets, the code here is almost
+identical to upstream, with the following additional features only supported
+here:
+- ECH split mode is supported here in the OpenSSL, haproxy and nginx packages
+- The OpenSSL code here supports use of X-Wing as an ECH KEM, in order to 
+  demonstrate use of post-quantum algorithms with ECH. That works with
+  curl as built here (using that OpenSSL build) but also with golang clients.
 
 ## Builder/CI status for repos
 
@@ -44,17 +55,9 @@ check that those build and pass the basic ECH test.
 
 As of 2026-09-17 we've updated these builds to reflect the latest upstreams.
 
-It seems that the badges are randomly wrong these days where they used be
-reliable - no idea why;-(
-
-Packages with our ECH code yet to be upstreamed:
-
-| Package  | 'Builder' status | Details |
-|--|--|--|
-| [python](https://github.com/defo-project/cpython) | [![builder](https://github.com/defo-project/cpython/actions/workflows/packages.yaml/badge.svg?event=workflow_dispatch)](https://github.com/defo-project/cpython/actions/workflows/packages.yaml) | [workflow link](https://github.com/defo-project/cpython/actions/workflows/packages.yaml) |
-
-For packages where our ECH code has already been upstreamed, we also have a
-daily check that those build and pass a basic ECH test:
+For packages where our ECH code has already been upstreamed, we have
+checks that those build and pass a basic ECH test. Those are currently
+only run after a git push.
 
 | Package  | 'Builder' status | Details |
 |--|--|--|
@@ -64,3 +67,4 @@ daily check that those build and pass a basic ECH test:
 | [lighttpd1.4](https://github.com/defo-project/lighttpd1.4) | ![lighttpd packages.yaml](https://github.com/defo-project/lighttpd1.4/actions/workflows/packages.yaml/badge.svg?event=workflow_dispatch) | [workflow link](https://github.com/defo-project/lighttpd1.4/actions/workflows/packages.yaml) |
 | [haproxy](https://github.com/defo-project/haproxy) | ![haproxy packages.yaml](https://github.com/defo-project/haproxy/actions/workflows/packages.yaml/badge.svg?event=workflow_dispatch) | [workflow link](https://github.com/defo-project/haproxy/actions/workflows/packages.yaml) |
 | [nginx](https://github.com/defo-project/nginx) | ![nginx packages.yaml](https://github.com/defo-project/nginx/actions/workflows/packages.yaml/badge.svg) | [workflow link](https://github.com/defo-project/nginx/actions/workflows/packages.yaml) |
+| [python](https://github.com/defo-project/cpython) | [![builder](https://github.com/defo-project/cpython/actions/workflows/packages.yaml/badge.svg?event=workflow_dispatch)](https://github.com/defo-project/cpython/actions/workflows/packages.yaml) | [workflow link](https://github.com/defo-project/cpython/actions/workflows/packages.yaml) |
